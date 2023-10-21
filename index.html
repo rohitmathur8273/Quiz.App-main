@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="start_box">
+            <p>Welcome to the Quiz</p>
+            <br><br>
+            <button id="start_btn" class="btn">Start Quiz</button>
+        </div>
+        <div class="rule_box">
+            <div class="rule_heading_box">
+                <p class="rule_heading">Rule & Instructions:-</p>
+            </div>
+            <div class="rule_body_box">
+                <ol class="rule">
+                    <li>You will have only <span>15 seconds</span> per each question.</li>
+                    <li>Once you select your answer, it can't be unselect.</li>
+                    <li>You can't select any option once the time goes off.</li>
+                    <li>You can't exit from the Quiz while you're playing.</li>
+                    <li>You will get points on the basis of your correct answers.</li>
+                </ol>
+            </div>
+            <div class="rule_footer_box">
+                <button id="exit_btn" class="btn">Exit Quiz</button>
+                <button class="btn" id="continue_btn">Continue</button>
+            </div>
+        </div>
+
+        <div class="question_box">
+            <div class="question_heading_box">
+                <p class="question_heading">Amazing Quiz Application</p>
+                <div class="timer_box">
+                    <p>Time left :</p><span class="time"></span>
+                </div>
+            </div>
+
+            <div class="range_box">
+                <div class="ranger"></div>
+            </div>
+
+            <div class="question_body_box">
+                <div class="question_section"></div>
+                <div class="option_section"></div>
+            </div>
+            <div class="question_footer_box">
+                <p><span class="que_count"></span> of 5 Qustions</p>
+                <button class="btn" id="next_btn">Next</button>
+            </div>
+        </div>
+
+        <div class="score_box">
+            <div class="score_heading_box">
+                <h2 class="score_heading">Thank You For Playing Quiz</h2>
+            </div>
+
+            <div class="img_box">
+                <img src="./trophy.png" alt="" id="trophy_img">
+            </div>
+
+            <div class="score_body">
+                <h3 class="score_body_heading"></h3>
+            </div>
+
+            <div class="score_footer">
+                <div class="left_footer">
+                    <h4>Correct</h4>
+                    <h2 class="correctVal"></h2>
+                </div>
+                <div class="middle_footer">
+                    <h4>Not Attemped</h4>
+                    <h2 class="notAttempVal"></h2>
+                </div>
+                <div class="right_footer">
+                    <h4>Incorrect</h4>
+                    <h2 class="incorrectVal"></h2>
+                </div>
+            </div>
+
+            <div class="score_btn_box">
+                <button class="btn" id="play_btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
